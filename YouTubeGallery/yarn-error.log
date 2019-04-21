@@ -1,0 +1,31 @@
+Arguments: 
+  D:\Programming\Software\NodeJs\node.exe C:\Program Files (x86)\Yarn\bin\yarn.js init
+
+PATH: 
+  C:\Python27\;C:\Python27\Scripts;C:\Program Files\Microsoft MPI\Bin\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Software\Calibre2\;C:\Program Files\AMI\DuOS\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;D:\Programming;C:\Program Files\dotnet\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;D:\Programming\Software\NodeJs\;C:\ProgramData\chocolatey\bin;C:\Program Files (x86)\Yarn\bin\;C:\Users\Ahriman\AppData\Local\Microsoft\WindowsApps;C:\Program Files\AMI\DuOS\;D:\wamp64\bin\php\php7.0.10;C:\Users\Ahriman\AppData\Roaming\Composer\vendor\bin;D:\Programming\JetBrains\PhpStorm 2018.3\bin;;D:\Programming\Microsoft VS Code\bin;C:\Users\Ahriman\AppData\Roaming\npm;C:\Users\Ahriman\AppData\Local\Yarn\bin
+
+Yarn version: 
+  1.15.2
+
+Node version: 
+  11.14.0
+
+Platform: 
+  win32 x64
+
+Trace: 
+  SyntaxError: d:\Programming\Projects\InfoFinder\package.json: Unexpected end of JSON input
+      at JSON.parse (<anonymous>)
+      at C:\Program Files (x86)\Yarn\lib\cli.js:1625:59
+      at Generator.next (<anonymous>)
+      at step (C:\Program Files (x86)\Yarn\lib\cli.js:304:30)
+      at C:\Program Files (x86)\Yarn\lib\cli.js:315:13
+
+npm manifest: 
+  
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile

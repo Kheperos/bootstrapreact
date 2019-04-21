@@ -1,0 +1,9 @@
+const ActionTypes = {
+    SAVE_VIDEO: 'SAVE_VIDEO',
+    SAVE_VIDEO_DOM: 'SAVE_VIDEO_DOM',
+    RECEIVE_VIDEOS: 'RECEIVE_VIDEOS',
+    REMOVE_VIDEO: 'REMOVE_VIDEO',
+    REMOVE_VIDEO_DOM: 'REMOVE_VIDEO_DOM',
+};
+
+module.exports = ActionTypes;
