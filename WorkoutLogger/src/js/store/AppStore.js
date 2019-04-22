@@ -6,9 +6,23 @@ const assign = require('object-assign');
 
 const CHANGE_EVENT = 'change';
 
-var _videos = [];
+var _workouts = [];
+var _showForm = false;
 
 var AppStore = assign({}, EventEmitter.prototype, {
+    showForm() {
+            _showForm = true;
+            console.log(_showForm+'e form');
+    },
+    getShowForm() {
+        return _showForm;
+    },
+    addWorkout(workout) {
+        _workouts.push(workout);
+    },
+    getWorkouts() {
+        return _workouts;
+    },
     emitChange() {
         this.emit(CHANGE_EVENT);
     },
@@ -23,8 +37,19 @@ var AppStore = assign({}, EventEmitter.prototype, {
 
 AppDispatcher.register(function (payload) {
     var action = payload.action;
-    switch (action.actionType) {
 
+    switch (action.actionType) {
+        case AppConstants.SHOW_FORM:
+            AppStore.showForm();
+            AppStore.emitChange();
+
+            break;
+        case AppConstants.ADD_WORKOUT:
+            AppStore.addWorkout(action.workout);
+            // AppAPI.addWorkout(action.workout);
+            AppStore.emitChange();
+
+            break;
     }
 });
 
